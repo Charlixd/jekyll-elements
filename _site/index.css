@@ -1,0 +1,207 @@
+body {
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    background: url(images/memphis-colorful.png)
+}
+
+
+.wrapper{
+           display:grid;
+           grid-template-columns: 1fr 1fr 1fr; 
+           grid-column-gap: 1em;
+           grid-row-gap: 2em;
+         }
+       
+       .wrapper > div{
+          
+           padding: 1em;       
+       }
+       
+
+
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+
+
+.uranium {
+    position: fixed;
+    bottom:50px;
+    left:76px;
+    color:white;
+    font-size: 45px;
+}
+
+.uranium1 {
+    position: fixed;
+    top:30px;
+    left:76px;
+    color:white;
+    font-size: 45px;
+}
+
+
+
+.cobalt {
+    position: fixed;
+    bottom:50px;
+    left:94px;
+    color: black;
+    font-size: 45px;
+}
+
+.cobalt1 {
+    position: fixed;
+    top:30px;
+    left:94px;
+    color: black;
+    font-size: 45px;
+}
+
+
+.radium {
+    position: fixed;
+    bottom:50px;
+    left:84px;
+    color: white;
+    font-size: 45px;
+}
+
+.radium1 {
+    position: fixed;
+    top:30px;
+    left:84px;
+    color: white;
+    font-size: 45px;
+}
+
+.plutonium {
+    position: fixed;
+    bottom:50px;
+    left:56px;
+    color: black;
+    font-size: 45px;
+}
+
+.plutonium1 {
+    position: fixed;
+    top:30px;
+    left:56px;
+    color: black;
+    font-size: 45px;
+}
+
+.radon {
+    position: fixed;
+    bottom:50px;
+    left:95px;
+    font-size: 45px;
+    
+}
+
+.radon1 {
+    position: fixed;
+    top:30px;
+    left:95px;
+    font-size: 45px;
+    
+}
+
+.button {
+    text-decoration: none;
+    color: green;
+    font-size: 1.5em;
+    border: 2px solid green;
+    padding: 12px 10px;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: green;
+    color:white;
+    border-radius: 8px;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* social media hover effect */
+.fa:hover {
+    background: #c0c0c0;
+    color: black;
+}
+
+/* social media icons */
+
+/* Facebook */
+.fa-facebook {
+    background: black;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: black;
+    color: white;
+}
+
+/* tumblr */
+.fa-tumblr {
+    background: black;
+    color: white;
+}
+
+/* github */
+.fa-github {
+    background: black;
+    color: white;
+}
+    

@@ -1,0 +1,22 @@
+# Site settings
+title: Elements
+email: 
+url: http://127.0.0.1:4000/
+description: "My Element Website"
+baseurl: 
+
+# Footer settings
+footer: Designed and developed by Charlie Lown | Copyright 2017 
+
+# Social networks usernames 
+social:
+  - title: Instagram
+    url: 
+  - title: Github
+    url: 
+  - title: Tumblr
+    url: 
+
+# Build settings
+markdown: kramdown
+permalink: pretty
